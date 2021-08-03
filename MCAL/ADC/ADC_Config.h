@@ -1,44 +1,44 @@
 /*******************************************************************************/
 /*******************************************************************************/
-/***************	@Author:	Zeyad Mohsen Mohamed	         ************************/
-/***************	Layer:		 MCAL				         	            ************************/
-/***************	SWC:		   ADC						                     ************************/
-/***************	@TITLE:		ADC_Config.h			               ************************/
-/***************	Version:	V01						                     ************************/
+/***************	@Author:	Zeyad Mohsen Mohamed	************************/
+/***************	Layer:		MCAL					************************/
+/***************	SWC:		ADC						************************/
+/***************	@TITLE:		ADC_Config.h			************************/
+/***************	Version:	V01						************************/
 /*******************************************************************************/
 /*******************************************************************************/
 
 #ifndef ADC_CONFIG_H_
 #define ADC_CONFIG_H_
 /**********************************************************
-*		Set the timeout for synch conversion    		             *
+*		Set the timeout for synch conversion    		  *
 **********************************************************/
 #define ADC_u8_TIMEOUT_PERIOD		50000
 
 /**********************************************************
-*			Select Voltage Reference fo ADC  			                  *
+*			Select Voltage Reference fo ADC  			  *
 **********************************************************/
 /*
  * Options : 1- AREF   				 ,Internal Vref turned off.
- 	 	 	       2- AVCC
- 	 	 	       3- INTERNAL_2_56MV
+ 	 	 	 2- AVCC
+ 	 	 	 3- INTERNAL_2_56MV
  */
 #define REFS 	AVCC
 /**********************************************************
-*			Select (Left or right) adjust result  		              *
+*			Select (Left or right) adjust result  		  *
 **********************************************************/
 /*
  * Options : 1- LEFT_ADJUST				,when using 8 bit resolution
- 	 	 	       2- RIGHT_ADJUST			,when using 10 bit resolution
+ 	 	 	 2- RIGHT_ADJUST			,when using 10 bit resolution
  */
 #define ADLAR 	LEFT_ADJUST
 /**********************************************************
-*			Select The prescaler				  		                          *
+*			Select The prescaler				  		  *
 **********************************************************/
 /*
  * Options : 1- DIVIDE_BY_128
- 	 	 	       2- DIVIDE_BY_64
- 	 	 	       3- DIVIDE_BY_32
+ 	 	 	 2- DIVIDE_BY_64
+ 	 	 	 3- DIVIDE_BY_32
  */
 #define ADPS 	DIVIDE_BY_128
 /**********************************************************
